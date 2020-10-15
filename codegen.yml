@@ -1,0 +1,12 @@
+overwrite: true
+schema: "https://countries-274616.ew.r.appspot.com/"
+documents: "graphql/**/*.graphql"
+generates:
+  generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-urql"
+    config:
+      withComponent: true
+      withHooks: true

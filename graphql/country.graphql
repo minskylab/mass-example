@@ -1,0 +1,9 @@
+query CountryInformation {
+    Country {
+        _id
+        name
+        capital
+        area
+        population
+    }
+}
